@@ -6,7 +6,7 @@ import {Issue} from "../model/issue";
     providedIn: 'root'
 })
 export class IssueService {
-    url: string = 'http://localhost:8080/api/issue';
+    url: string = '/api/issue';
 
     constructor(private httpClient: HttpClient) {
     }
