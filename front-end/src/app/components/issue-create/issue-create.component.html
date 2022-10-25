@@ -1,1 +1,36 @@
-<p>issue-create works!</p>
+<div>
+    <br>
+    <mat-card>
+        <h3>Create New Issue</h3>
+        <br>
+        <mat-divider></mat-divider>
+        <form [formGroup]="form" (submit)="save(title.value, responsible.value, description.value, severity.value)" class="create-form">
+            <mat-form-field class="form-field-full-width">
+                <input matInput placeholder="Issue Title" formControlName="title" #title>
+            </mat-form-field>
+
+            <mat-form-field class="form-field-full-width">
+                <input matInput placeholder="Responsible" formControlName="responsible" #responsible>
+            </mat-form-field>
+
+            <mat-form-field class="form-field-full-width">
+                <textarea matInput placeholder="Description" formControlName="description" #description>
+                </textarea>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-select placeholder="severity" formControlName="severity" #severity>
+                    <mat-option value="Low">Low</mat-option>
+                    <mat-option value="Medium">Medium</mat-option>
+                    <mat-option value="High">High</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-divider></mat-divider>
+            <br><br>
+            <button mat-raised-button color="accent" routerLink="/issue-list">Back</button>
+            <button type="submit" mat-raised-button color="primary" [disabled]="form.pristine || form.invalid">Save
+            </button>
+        </form>
+    </mat-card>
+</div>

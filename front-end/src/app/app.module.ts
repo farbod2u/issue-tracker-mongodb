@@ -21,6 +21,7 @@ import {IssueListComponent} from './components/issue-list/issue-list.component';
 import {IssueCreateComponent} from './components/issue-create/issue-create.component';
 import {IssueEditComponent} from './components/issue-edit/issue-edit.component';
 import {MatSnackBarModule} from "@angular/material/snack-bar";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
     declarations: [
@@ -36,7 +37,8 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
         MatToolbarModule,
         HttpClientModule,
         MatDividerModule, MatOptionModule, MatSelectModule, MatIconModule, MatButtonModule,
-        MatSnackBarModule, MatFormFieldModule, MatInputModule, MatOptionModule, MatCardModule, MatTableModule
+        MatSnackBarModule, MatFormFieldModule, MatInputModule, MatOptionModule, MatCardModule, MatTableModule,
+        ReactiveFormsModule
     ],
     providers: [],
     bootstrap: [AppComponent]

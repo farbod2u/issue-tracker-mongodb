@@ -14,6 +14,7 @@ public class IssueService {
     private final IssueRepository issueRepository;
 
     public Issue insert(Issue entity){
+        entity.setStatus("Open");
         return issueRepository.save(entity);
     }
 
