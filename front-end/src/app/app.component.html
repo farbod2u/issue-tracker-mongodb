@@ -1,4 +1,12 @@
 <mat-toolbar>
-  Issue Tracker
+    <mat-toolbar-row>
+        <div>Issue Tracker</div>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row>
+        <button mat-raised-button color="primary" routerLink="/issue-list">Show Issues</button>
+        <div class="toolbar-spacer"></div>
+        <button mat-raised-button color="primary" routerLink="/issue-create">Create New Issue</button>
+    </mat-toolbar-row>
 </mat-toolbar>
 <router-outlet></router-outlet>

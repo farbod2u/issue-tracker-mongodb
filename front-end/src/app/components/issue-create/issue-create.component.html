@@ -2,9 +2,9 @@
     <br>
     <mat-card>
         <h3>Create New Issue</h3>
-        <br>
         <mat-divider></mat-divider>
-        <form [formGroup]="form" (submit)="save(title.value, responsible.value, description.value, severity.value)" class="create-form">
+        <form [formGroup]="form" (submit)="save(title.value, responsible.value, description.value, severity.value)"
+              class="create-form">
             <mat-form-field class="form-field-full-width">
                 <input matInput placeholder="Issue Title" formControlName="title" #title>
             </mat-form-field>
@@ -28,9 +28,13 @@
 
             <mat-divider></mat-divider>
             <br><br>
-            <button mat-raised-button color="accent" routerLink="/issue-list">Back</button>
-            <button type="submit" mat-raised-button color="primary" [disabled]="form.pristine || form.invalid">Save
-            </button>
+
+                <button mat-raised-button color="accent" routerLink="/issue-list">Back</button>
+
+                <button type="submit" mat-raised-button color="primary" [disabled]="form.pristine || form.invalid">
+                    Save
+                </button>
+
         </form>
     </mat-card>
 </div>

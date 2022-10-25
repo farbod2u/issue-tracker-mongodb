@@ -1,10 +1,8 @@
 <div>
     <br>
     <mat-card>
-        <button mat-raised-button color="primary" routerLink="/issue-create">Create New</button>
-        <br>
+        <h3>Show Issues</h3>
         <mat-divider></mat-divider>
-        <br>
         <table mat-table [dataSource]="issues" width="100%" >
             <ng-container matColumnDef="title">
                 <th mat-header-cell *matHeaderCellDef>Title</th>
