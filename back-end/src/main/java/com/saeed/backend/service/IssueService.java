@@ -30,9 +30,9 @@ public class IssueService {
         return issueRepository.save(entity);
     }
 
-    public String delete(String id){
+    public Void delete(String id){
         issueRepository.deleteById(id);
-        return "deleted";
+        return null;
     }
 
 }

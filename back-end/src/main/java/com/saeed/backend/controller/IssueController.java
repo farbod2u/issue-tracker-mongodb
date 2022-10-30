@@ -37,7 +37,7 @@ public class IssueController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<String> delete(@PathVariable("id") String id){
+    public ResponseEntity<Void> delete(@PathVariable("id") String id){
         return new ResponseEntity<>(issueService.delete(id), HttpStatus.OK);
     }
 

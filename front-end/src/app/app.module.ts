@@ -22,13 +22,16 @@ import {IssueCreateComponent} from './components/issue-create/issue-create.compo
 import {IssueEditComponent} from './components/issue-edit/issue-edit.component';
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {ReactiveFormsModule} from "@angular/forms";
+import {MatDialogModule} from "@angular/material/dialog";
+import { DeleteDialogComponent } from './components/delete-dialog/delete-dialog.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         IssueListComponent,
         IssueCreateComponent,
-        IssueEditComponent
+        IssueEditComponent,
+        DeleteDialogComponent
     ],
     imports: [
         BrowserModule,
@@ -38,7 +41,7 @@ import {ReactiveFormsModule} from "@angular/forms";
         HttpClientModule,
         MatDividerModule, MatOptionModule, MatSelectModule, MatIconModule, MatButtonModule,
         MatSnackBarModule, MatFormFieldModule, MatInputModule, MatOptionModule, MatCardModule, MatTableModule,
-        ReactiveFormsModule
+        ReactiveFormsModule, MatDialogModule
     ],
     providers: [],
     bootstrap: [AppComponent]
