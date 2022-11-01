@@ -41,7 +41,7 @@ export class IssueListComponent implements OnInit {
     }
 
     edit(id: string) {
-        this.router.navigate([`/issue-edit/ ${id}`]);
+        this.router.navigate([`/issue-edit/${id}`]);
     }
 
     delete(_id: string) {
